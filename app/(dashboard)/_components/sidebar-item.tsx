@@ -19,8 +19,8 @@ export const SidebarItems = ({
 	const router = useRouter();
 
 	const isActive =
-	 	(pathname == "/" && href == "/") ||
-		pathname == href || pathname?.startsWith(`${href}/`);
+	 	(pathname === "/" && href === "/") ||
+		pathname === href || pathname?.startsWith(`${href}/`);
 
 		const onClcik = () => {
 			router.push(href);
